@@ -1,0 +1,110 @@
+.landing {
+  .container {
+    @include add-section-padding;
+    &::before {
+      @include border-section;
+    }
+  }
+  q {
+    display: block;
+    margin: auto;
+    font-size: 25px;
+    max-width: 1000px;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: $section-padding;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.services {
+  .container {
+    @include add-section-padding;
+    &::before {
+      @include border-section;
+    }
+  }
+  .three-box-container {
+    @media (max-width: $large) {
+      justify-items: center;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .box {
+    h3 {
+      color: $dark-grey;
+      @media (max-width: $medium) {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    i {
+      color: black;
+      font-size: 30px;
+      margin-right: 10px;
+      @media (max-width: $medium) {
+        margin: 0;
+      }
+    }
+    p {
+      max-width: 300px;
+      color: #777;
+    }
+    a {
+      color: $red;
+      i {
+        font-size: 10px;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.members {
+  .container {
+    @include add-section-padding;
+    &::before {
+      @include border-section;
+    }
+  }
+  img {
+    width: 100%;
+  }
+  span {
+    font-weight: normal;
+  }
+  p {
+    color: #777;
+  }
+  a {
+    color: $red;
+  }
+  i {
+    font-size: 10px;
+  }
+}
+
+.lorem {
+  .container {
+    @include add-section-padding;
+  }
+
+  .three-box-container {
+    gap: 20px;
+  }
+  .box {
+    position: relative;
+  }
+  .overlay {
+    @include overlay;
+  }
+  .box:hover .overlay {
+    opacity: 0.5;
+  }
+  img {
+    width: 100%;
+  }
+}

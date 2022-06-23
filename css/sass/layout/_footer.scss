@@ -1,0 +1,80 @@
+.footer {
+  background-color: #ddd;
+  .container {
+    @include add-section-padding;
+    padding-bottom: 25px;
+  }
+  .three-box-container {
+    gap: 40px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $light-grey;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .text {
+      padding: 20px;
+    }
+    h4 {
+      color: $red;
+    }
+    p {
+      color: #777;
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
+    border: 2px solid $dark-grey;
+  }
+
+  .col-2 {
+    > div {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    p {
+      margin: 0;
+    }
+  }
+  .col-3 {
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      gap: 10px;
+    }
+    input {
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: $red;
+      color: white;
+      width: 100px;
+      cursor: pointer;
+    }
+    textarea {
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    color: $dark-grey;
+    margin-top: 20px;
+  }
+}
